@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.top-banner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-image: url(asset\ 18.png);
+    background-color: #4fb3d4;
+    color: #f9f9f9;
+    line-height: 30px;
+    background-size: 300px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 70px;
+    padding: 8px;
+    background-color: #f9f9f9;
+}
+
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.top-banner i{
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+#logo a{ 
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo span{
+    color: #ffa500;
+}
+
+li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+li a:hover{
+    background-color: #ffa500;
+    color: white;
+}
+
+.book-now{
+    background-color: #ffa500;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.book-now:hover{
+    color: white;
+    scale: 1.1;
+}
+
+.search_bar input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    border-bottom:  2px solid black;
+}
+
+.search_bar i{
+    font-size: 18px;
+    color: #ffa500;
+    margin-right: 5px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(backgroundimg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-container{
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.left-container h5{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.left-container h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-shadow: 0px 1px 1px black;
+
+}
+
+.left-container p{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.left-container a{
+    padding: 10px;
+    font-size: 18px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.left-container a:hover{
+    background: #ffa500;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "Kedarnath";}
+    20%{content: "Manali";}
+    40%{content: "Kashmir";}
+    60%{content: "Spiti Valley";}
+    80%{content: "Ladakh";}
+    100%{content: "Jaipur";}
+} 
+
+.right-container{
+    height: 500px;
+    padding-top: 150px; 
+}
+
+.right-container form{
+    width: 400px;
+    display: grid;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+form h4{
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.form-group{
+    display: grid;
+    margin: 10px;
+    padding: 0 10px;
+    font-weight: 600; 
+    font-size: 20px;     
+}
+
+.form-group input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    padding: 10px 0;    
+}
+
+.form-group ::placeholder{
+    color: black;
+}
+
+form button{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #ffa500;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+    outline: none;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+form button:hover{
+    letter-spacing: 4px;
+}
